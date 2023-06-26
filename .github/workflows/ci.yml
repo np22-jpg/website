@@ -1,0 +1,66 @@
+name: Build and Push to Docker Hub
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "30 12 * * 0" # Run once every Sunday
+
+env:
+  REPO: ultraviolet-node
+  PLATFORMS: linux/amd64,linux/arm64
+
+jobs:
+  build_and_push_docker_images:
+    name: Push Docker image to Docker Hub
+    
+    permissions:
+        packages: write
+        contents: read
+    
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+
+      - name: Build Production Images
+        if: github.event_name != 'pull_request'
+        id: build-image
+        uses: redhat-actions/buildah-build@b4dc19b4ba891854660ab1f88a097d45aa158f76 # v2
+        with:
+          image: ${{ env.REPO }}
+          tags: latest ${{ github.sha }}
+
+      # PUSH
+
+      - uses: sigstore/cosign-installer@d13028333d784fcc802b67ec924bcebe75aa0a5f # v3.1.0 
+      - name: Write Cosign Key
+        run:  |
+          echo "${{ env.COSIGN_PRIVATE_KEY }}" > cosign.key;
+          wc -c cosign.key;
+        env:
+          COSIGN_EXPERIMENTAL: false
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}       
+
+      - name: Push To GHCR
+        id: push-to-ghcr
+        uses: redhat-actions/push-to-registry@9986a6552bc4571882a4a67e016b17361412b4df # v2
+        with:
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+          image: ${{ steps.build-image.outputs.image }}
+          tags: ${{ steps.build-image.outputs.tags }}
+          registry: ghcr.io/${{ github.repository_owner }}
+
+      - name: Sign GHCR Image
+        run:  |
+          cosign login ghcr.io -u ${{ github.actor }} -p ${{ github.token }}
+          cosign sign -y --key cosign.key ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}@${GHCR_TAGS}
+        env:
+          COSIGN_EXPERIMENTAL: false
+          GHCR_TAGS: ${{ steps.push-to-ghcr.outputs.digest }}
+
+
+      - name: Print image URLs
+        run:  |
+          echo "Image pushed to ${{ steps.push-to-ghcr.outputs.registry-paths }}"

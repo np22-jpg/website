@@ -7,8 +7,8 @@ on:
     - cron: "30 12 * * 0" # Run once every Sunday
 
 env:
-  REPO: ultraviolet-node
-  PLATFORMS: linux/amd64,linux/arm64
+  REPO: website
+  PLATFORMS: linux/amd64
 
 jobs:
   build_and_push_docker_images:
@@ -30,6 +30,8 @@ jobs:
         with:
           image: ${{ env.REPO }}
           tags: latest ${{ github.sha }}
+          containerfiles: |
+            ./Containerfile
 
       # PUSH
 

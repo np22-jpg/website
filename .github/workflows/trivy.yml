@@ -1,8 +1,10 @@
 name: Scan with Trivy
 
 on:
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ["Build and Push to Docker Hub"]
+    types:
+      - completed
   schedule:
     - cron: "30 13 * * *" # Run once every day
 

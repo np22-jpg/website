@@ -1,0 +1,22 @@
+name: Scan with Dive
+
+on:
+  workflow_run:
+    workflows: ["Build and Push to Docker Hub"]
+    types:
+      - completed
+
+jobs:
+  scan_dive:
+    name: Scan Image with Dive
+
+    permissions:
+      packages: read
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dive
+        uses: yuichielectric/dive-action@0.0.4
+        with:
+          image: ghcr.io/${{ github.repository_owner }}/website
+          github-token: ${{ secrets.GITHUB_TOKEN }}

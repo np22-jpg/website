@@ -780,6 +780,11 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
+astro-seo@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.7.4.tgz#0c2788b97ec3944390be2dd39a8ad9a6aec294b0"
+  integrity sha512-E+wJmxOnvBRjgzVctdGk/VdwoEqeQ6Q/KgVW2wRBXZWJVDgOweB32Da/UiH0/FpGncPzo2daOrc08DNn5wTanw==
+
 astro@^2.6.5:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.7.4.tgz#d1c67f4f4e47ac7155aedf511862af7c08783024"

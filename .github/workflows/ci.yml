@@ -62,7 +62,7 @@ jobs:
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
-          image: ghcr.io/${{ steps.build-image.outputs.image }}
+          image: ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print image URLs

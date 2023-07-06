@@ -1,32 +1,44 @@
 ---
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <SEO
+      title="Nolan Poe's Website"
+      description="Engineering portfolio resume website to show skills in electrical engineering and computer science."
+      charset="utf-8"
+      openGraph={{
+        basic: {
+          title: "Nolan Poe - Engineering student",
+          type: "image",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg",
+        },
+      }}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        meta: [
+          {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1, shrink-to-fit=no",
+          },
+        ],
+      }}
     />
-    <meta name="description" content="Nolan Poe's funny little website." />
-    <meta name="author" content="Nolan Poe" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <title>Nolan Poe</title>
+
   </head>
-  <body class="bg-white">
+  <body class="bg-stone-100">
     <!-- Navigation-->
-    <nav class="bg-stone-900 absolute inset-x-0 bottom-0">
+    <nav class="bg-stone-950 absolute inset-x-0 bottom-0">
       <div class="block md:mx-20" id="navbar-default">
         <ul
-          class="flex flex-col items-start md:items-center p-4 mt-4 md:flex-row md:space-x-12 md:m-0 md:bg-neutral-900"
+          class="flex flex-col p-4 my-4 md:items-center md:flex-row md:space-x-12 md:my-1"
         >
           <li>
-            <a
-              href="#!"
-              class="hidden md:block text-slate-50 text-5xl"
-              aria-current="page">npg</a
-            >
+            <a href="#" class="flex flex-row text-slate-50 text-5xl">
+              npg
+            </a>
           </li>
           <li>
             <a
@@ -60,3 +72,9 @@
     </section>
   </body>
 </html>
+
+<style lang="css">
+  [astro-icon] {
+      color: text-slate-50;
+  }
+</style>

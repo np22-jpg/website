@@ -32,30 +32,30 @@ import { SEO } from "astro-seo";
     <!-- Navigation-->
     <nav class="bg-stone-950 absolute inset-x-0 bottom-0">
       <div class="block md:mx-20" id="navbar-default">
-        <ul
-          class="flex flex-col p-4 my-4 md:items-center md:flex-row md:space-x-12 md:my-1"
+        <ulm
+          class="flex flex-col mb-6 space-y-4 md:mt-2 md:mb-2 md:items-center md:flex-row md:space-x-10"
         >
           <li>
-            <a href="#" class="flex flex-row text-slate-50 text-5xl">
+            <a href="#" class="hidden md:flex md:text-slate-50 md:text-5xl md:mb-3">
               npg
             </a>
           </li>
           <li>
             <a
               href="https://github.com/np22-jpg"
-              class="text-slate-400 my-10 text-4xl md:text-3xl">GitHub</a
+              class="text-slate-400 text-4xl md:pt-8 md:text-3xl">GitHub</a
             >
           </li>
           <li>
             <a
               href="https://ultraviolet.nolanpoe.me"
-              class="text-slate-400 my-auto text-4xl md:text-3xl">Ultraviolet</a
+              class="text-slate-400 text-4xl md:text-3xl">Ultraviolet</a
             >
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/nolan-poe-077737210/"
-              class="text-slate-400 my-auto text-4xl md:text-3xl">LinkedIn</a
+              class="text-slate-400 text-4xl md:text-3xl">LinkedIn</a
             >
           </li>
         </ul>
@@ -64,17 +64,14 @@ import { SEO } from "astro-seo";
     <section>
       <div class="p-6 md:mx-20">
         <h1 class="my-4 font-semibold text-8xl">Nolan Poe</h1>
-        <p class="text-xl">
-          Electrical Engineering major at San Jose State University,<br /> Computer
-          Science major at De Anza College.
+        <div class="text-xl flex flex-col">
+        <p>
+          Electrical Engineering major at San Jose State University,
         </p>
+        <p> 
+          Computer Science major at De Anza College.
+        </p></div>
       </div>
     </section>
   </body>
 </html>
-
-<style lang="css">
-  [astro-icon] {
-      color: text-slate-50;
-  }
-</style>

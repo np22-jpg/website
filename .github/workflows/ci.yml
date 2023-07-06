@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "30 12 * * 0" # Run once every Sunday
+    - cron: "0 1 * * *" # Run once every day
 
 env:
   REPO: website

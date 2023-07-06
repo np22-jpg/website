@@ -10,3 +10,5 @@ RUN yarn build
 FROM cgr.dev/chainguard/nginx:latest AS release
 
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 8080

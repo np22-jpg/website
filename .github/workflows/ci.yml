@@ -2,7 +2,7 @@ name: Build and Push to Docker Hub
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   schedule:
     - cron: "30 12 * * 0" # Run once every Sunday
 
@@ -13,11 +13,11 @@ env:
 jobs:
   build_and_push_docker_images:
     name: Push Docker image to Docker Hub
-    
+
     permissions:
-        packages: write
-        contents: read
-    
+      packages: write
+      contents: read
+
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -35,14 +35,14 @@ jobs:
 
       # PUSH
 
-      - uses: sigstore/cosign-installer@6e04d228eb30da1757ee4e1dd75a0ec73a653e06 # v3.1.1 
+      - uses: sigstore/cosign-installer@6e04d228eb30da1757ee4e1dd75a0ec73a653e06 # v3.1.1
       - name: Write Cosign Key
-        run:  |
+        run: |
           echo "${{ env.COSIGN_PRIVATE_KEY }}" > cosign.key;
           wc -c cosign.key;
         env:
           COSIGN_EXPERIMENTAL: false
-          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}       
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
 
       - name: Push To GHCR
         id: push-to-ghcr
@@ -55,14 +55,13 @@ jobs:
           registry: ghcr.io/${{ github.repository_owner }}
 
       - name: Sign GHCR Image
-        run:  |
+        run: |
           cosign login ghcr.io -u ${{ github.actor }} -p ${{ github.token }}
           cosign sign -y --key cosign.key ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}@${GHCR_TAGS}
         env:
           COSIGN_EXPERIMENTAL: false
           GHCR_TAGS: ${{ steps.push-to-ghcr.outputs.digest }}
 
-
       - name: Print image URLs
-        run:  |
+        run: |
           echo "Image pushed to ${{ steps.push-to-ghcr.outputs.registry-paths }}"

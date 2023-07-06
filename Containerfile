@@ -7,6 +7,6 @@ COPY ./ ./
 RUN yarn build
 
 
-FROM docker.io/library/nginx:latest
+FROM cgr.dev/chainguard/nginx:latest AS release
 
 COPY --from=builder /app/dist /usr/share/nginx/html

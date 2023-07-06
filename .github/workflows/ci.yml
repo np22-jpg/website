@@ -33,14 +33,6 @@ jobs:
           containerfiles: |
             ./Containerfile
 
-      # ANALYZE
-
-      - name: Dive
-        uses: yuichielectric/dive-action@0.0.4
-        with:
-          image: ${{ steps.build-image.outputs.image }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       # PUSH
 
       - name: Push To GHCR
@@ -64,6 +56,14 @@ jobs:
           COSIGN_EXPERIMENTAL: false
           GHCR_TAGS: ${{ steps.push-to-ghcr.outputs.digest }}
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+
+      # ANALYZE
+
+      - name: Dive
+        uses: yuichielectric/dive-action@0.0.4
+        with:
+          image: ghcr.io/${{ steps.build-image.outputs.image }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print image URLs
         run: |

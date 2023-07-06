@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dive
-        uses: yuichielectric/dive-action@0.0.4
+        uses: yuichielectric/dive-action@c2bf577bd2ed379a30c45597cf304f9f269dbdfe # 0.0.4
         with:
           image: ghcr.io/${{ github.repository_owner }}/website
           github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -63,6 +63,7 @@ jobs:
         uses: yuichielectric/dive-action@0.0.4
         with:
           image: ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}
+          config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print image URLs

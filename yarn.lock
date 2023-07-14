@@ -16,9 +16,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.4.2", "@astrojs/compiler@^1.5.3":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.6.tgz#1bccd2c986643cde0094466c3d5bd5d6c54644f2"
-  integrity sha512-gtcpm20y4EUUQNc7evn+ffSJLTlrZRKfBS6kT7r1aB9u+AAeP2BZIiyuSdgXJUS679pCV4sqbM80u8Iek575lg==
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.7.tgz#8c377f30bc4542631d4adc11f48896d78f79a8ac"
+  integrity sha512-dFU7GAMbpTUGPkRoCoMQrGFlTe3qIiQMSOxIXp/nB1Do4My9uogjEmBHdR5Cwr4i6rc5/1R3Od9v8kU/pkHXGQ==
 
 "@astrojs/internal-helpers@^0.1.1":
   version "0.1.1"
@@ -888,9 +888,9 @@ astro-seo@^0.7.4:
   integrity sha512-bo5PiB4Y30PP9QS6OnYcVOr1fKDE52mvJys/3HgeiM2h+/hS7jESUHZMx6VX7yRid1yMGHsp2OyVTA9DrdPyPg==
 
 astro@^2.6.5:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.8.2.tgz#fa46c8b635eec62ea3b216a0d33d2fdee5b5d39f"
-  integrity sha512-7cIribP5P+2bEnGXkYxUS4yBOj1cn3VxlCvRJ9+TZiIY6veUlAjTjJQ9gnyyezabqmjkQtzNrPbCumQov404Sw==
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.8.3.tgz#fc78c9afe67f92cb86551cd89ce66166bc367f54"
+  integrity sha512-UopGl3WubMnl15TWlR6PTCcH54TooZ+JoAloErfoXQtz4PAvmEEqEVc7tHoJ45iC7rhKgzILsvDhqzitBeRihw==
   dependencies:
     "@astrojs/compiler" "^1.5.3"
     "@astrojs/internal-helpers" "^0.1.1"
@@ -1492,9 +1492,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.431:
-  version "1.4.459"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.459.tgz#25a23370f4ae8aaa8f77aaf00133aa4994f4148e"
-  integrity sha512-XXRS5NFv8nCrBL74Rm3qhJjA2VCsRFx0OjHKBMPI0otij56aun8UWiKTDABmd5/7GTR021pA4wivs+Ri6XCElg==
+  version "1.4.460"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.460.tgz#f360a5059c039c4a5fb4dfa99680ad8129dd9f84"
+  integrity sha512-kKiHnbrHME7z8E6AYaw0ehyxY5+hdaRmeUbjBO22LZMdqTYCO29EvF0T1cQ3pJ1RN5fyMcHl1Lmcsdt9WWJpJQ==
 
 emmet@^2.4.3:
   version "2.4.5"
@@ -3058,10 +3058,19 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.4.23, postcss@^8.4.24, postcss@^8.4.25:
+postcss@^8.4.23, postcss@^8.4.24:
   version "8.4.25"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.25.tgz#4a133f5e379eda7f61e906c3b1aaa9b81292726f"
   integrity sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==
+  dependencies:
+    nanoid "^3.3.6"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
+postcss@^8.4.25:
+  version "8.4.26"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.26.tgz#1bc62ab19f8e1e5463d98cf74af39702a00a9e94"
+  integrity sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==
   dependencies:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
@@ -3943,9 +3952,9 @@ vfile@^5.0.0, vfile@^5.3.2, vfile@^5.3.7:
     vfile-message "^3.0.0"
 
 vite@^4.3.9:
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.4.3.tgz#dfaf86f4cba3058bf2724e2e2c88254fb0f21a5a"
-  integrity sha512-IMnXQXXWgLi5brBQx/4WzDxdzW0X3pjO4nqFJAuNvwKtxzAmPzFE1wszW3VDpAGQJm3RZkm/brzRdyGsnwgJIA==
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.4.4.tgz#b76e6049c0e080cb54e735ad2d18287753752118"
+  integrity sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==
   dependencies:
     esbuild "^0.18.10"
     postcss "^8.4.25"

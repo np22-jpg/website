@@ -53,9 +53,9 @@
     prismjs "^1.29.0"
 
 "@astrojs/sitemap@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.0.tgz#e5ca8defca80ec9240b889e2d35a029dd3678aec"
-  integrity sha512-qm7npHuUW4q3OOmulqhJ1g69jEQu0Sdc6P8NbOzqIoosj/L+3v4i8dtKBnp6n1UQ4Sx8H8Vdi3Z/On7i9/ZJhw==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.1.tgz#9cb07531918b5b652f4a74c927d90c1be1f19528"
+  integrity sha512-ErCthOQF0Yt6KkvaS+v/7CM6TxztOPHJjla4cbM3fBAFsDQbCS3tvoWSMqPJtmTFiy7veQ1eC5gH58FhPe85zg==
   dependencies:
     sitemap "^7.1.1"
     zod "3.21.1"
@@ -684,9 +684,9 @@
     "@types/unist" "^2"
 
 "@types/node@*":
-  version "20.5.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.0.tgz#7fc8636d5f1aaa3b21e6245e97d56b7f56702313"
-  integrity sha512-Mgq7eCtoTjT89FqNoTzzXg2XvCi5VMhRV6+I2aYanc6kQCBImeNaAYRs/DyoVqk1YEUJK5gN9VO7HRIdz4Wo3Q==
+  version "20.8.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.2.tgz#d76fb80d87d0d8abfe334fc6d292e83e5524efc4"
+  integrity sha512-Vvycsc9FQdwhxE3y3DzeIxuEJbWGDsnrxvMADzTDF/lcdR9/K+AQIeAghTQsHtotg/q0j3WEOYS/jQgSdWue3w==
 
 "@types/node@20.5.7":
   version "20.5.7"
@@ -709,9 +709,9 @@
   integrity sha512-NH5oErHOtHZYcjCtg69t26aXEk4BN2zLWqf7wnDZ+dpe0iR7Rds1SPGEItl3fca21oOe0n3OCnZ4W7jBxu7FOw==
 
 "@types/sax@^1.2.1":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@types/sax/-/sax-1.2.4.tgz#8221affa7f4f3cb21abd22f244cfabfa63e6a69e"
-  integrity sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@types/sax/-/sax-1.2.5.tgz#4392799e1770d24b6dc8d0c66c8882f8e1c38b3d"
+  integrity sha512-9jWta97bBVC027/MShr3gLab8gPhKy4l6qpb+UJLF5pDm3501NvA7uvqVCW+REFtx00oTi6Cq9JzLwgq6evVgw==
   dependencies:
     "@types/node" "*"
 

@@ -615,10 +615,10 @@
   resolved "https://registry.yarnpkg.com/@types/css-tree/-/css-tree-2.3.2.tgz#caf5579204b16ef09472af8001e8c4642652f101"
   integrity sha512-B5nF6h7xxpMLvZ1pzugAYUGj1aw4KgTpXZzOijkDMRzey4SlFi0jVWb3o0SS1CVSxyBciltVgjt67CwrgjmlWA==
 
-"@types/csso@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@types/csso/-/csso-5.0.0.tgz#e69f5c8d1fc99c4c7741ae65d3330deaff5d008e"
-  integrity sha512-EMrCTGpXRUsbFfZBzn2jcW6Sqg8kxWXkJcpvAGYSEzFqAJ2THDJSwiMeS2fPUw+0p6RQNT/n8F/skEc9hUBc0g==
+"@types/csso@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@types/csso/-/csso-5.0.2.tgz#d6c21386c13f70097a18567312791c8ca0f98e7a"
+  integrity sha512-4rX9xyR3Fk7hCbFvneunO74kfA6hgkc8vDW8LnzFrMHU+mqoMmsG7WtD1YAuHw/zhJHHQPfGxFf04Ypmnpyd5w==
   dependencies:
     "@types/css-tree" "*"
 
@@ -648,10 +648,10 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/html-minifier-terser@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-7.0.0.tgz#a316cad70201de31bcc1a97cf8b73b26ae46ad65"
-  integrity sha512-hw3bhStrg5e3FQT8qZKCJTrzt/UbEaunU1xRWJ+aNOTmeBMvE3S4Ml2HiiNnZgL8izu0LFVkHUoPFXL1s5QNpQ==
+"@types/html-minifier-terser@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-7.0.1.tgz#c63d417ea6e769a146bf22c81fa153427b08bc3c"
+  integrity sha512-ShOj4wY4R3bbUkKtlSmCX2N2AwBj1FDNTQm7HbmAdb6MJeAxG3tPUUxOhTZu06tlMpEEQd9agdr1Z198p+62IA==
 
 "@types/mdast@^3.0.0":
   version "3.0.14"
@@ -679,17 +679,12 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/node@*":
+"@types/node@*", "@types/node@20.8.7":
   version "20.8.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.7.tgz#ad23827850843de973096edfc5abc9e922492a25"
   integrity sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==
   dependencies:
     undici-types "~5.25.1"
-
-"@types/node@20.5.7":
-  version "20.5.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.7.tgz#4b8ecac87fbefbc92f431d09c30e176fc0a7c377"
-  integrity sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==
 
 "@types/node@^17.0.5":
   version "17.0.45"
@@ -792,19 +787,19 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-compress@^2.0.0:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.0.15.tgz#db2022339190cd4151c8081acf6d4b82993a25e6"
-  integrity sha512-vO2C3+d5SLmJDlw+NyU63P9hN37Mavvac1qLNCdyZZXO08vYeuoIvDJFeLo3SblBlU1koHlrmAezEDYTzugx4w==
+astro-compress@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.1.1.tgz#22cb9aaa24ebb9cd914907faff85a8cfcd899cba"
+  integrity sha512-75RUwcR21lX0y/xzoqNZHE3OwqsS1zRB/y9boQUggYd7iV5Sl2h8EkXxdfqn6tLA+hcnXZs0xB2X74AKQC7JQg==
   dependencies:
-    "@types/csso" "5.0.0"
-    "@types/html-minifier-terser" "7.0.0"
+    "@types/csso" "5.0.2"
+    "@types/html-minifier-terser" "7.0.1"
     csso "5.0.5"
-    files-pipe "2.0.18"
+    files-pipe "2.0.22"
     html-minifier-terser "7.2.0"
-    sharp "0.32.5"
+    sharp "0.32.6"
     svgo "3.0.2"
-    terser "5.19.3"
+    terser "5.22.0"
 
 astro-robots-txt@^1.0.0:
   version "1.0.0"
@@ -1572,12 +1567,12 @@ filename-reserved-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/filename-reserved-regex/-/filename-reserved-regex-3.0.0.tgz#3d5dd6d4e2d73a3fed2ebc4cd0b3448869a081f7"
   integrity sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==
 
-files-pipe@2.0.18:
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/files-pipe/-/files-pipe-2.0.18.tgz#c1a89271cbf4016c3cc8bfc7375fa7287b23e53f"
-  integrity sha512-Hgdyi3v62d0T3UpyDwDlIrKWeFTRqjajYxcsr1RWDbpwtWN+oaBCFjLfj/XwyBKgy2PE/BahL6TcKVGH9BO5cQ==
+files-pipe@2.0.22:
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/files-pipe/-/files-pipe-2.0.22.tgz#dfe22fee995959bb1fc131ec47b3ac744b5f63dc"
+  integrity sha512-LM4VNUZotNAJXc/jRYnFkOFjXfLLTZcNjHnbX2CYXH1UkxwbfwPNmpNWmu7W6DWs+BidTHDQg7J6OQHawtwXUw==
   dependencies:
-    "@types/node" "20.5.7"
+    "@types/node" "20.8.7"
     deepmerge-ts "5.1.0"
     fast-glob "3.3.1"
 
@@ -3364,21 +3359,7 @@ server-destroy@^1.0.1:
   resolved "https://registry.yarnpkg.com/server-destroy/-/server-destroy-1.0.1.tgz#f13bf928e42b9c3e79383e61cc3998b5d14e6cdd"
   integrity sha512-rb+9B5YBIEzYcD6x2VKidaa+cqYBJQKnU4oe4E3ANwRRN56yk/ua1YCJT1n21NTS8w6CcOclAKNP3PhdCXKYtQ==
 
-sharp@0.32.5:
-  version "0.32.5"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.5.tgz#9ddc78ead6446094f51e50355a2d4ec6e7220cd4"
-  integrity sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==
-  dependencies:
-    color "^4.2.3"
-    detect-libc "^2.0.2"
-    node-addon-api "^6.1.0"
-    prebuild-install "^7.1.1"
-    semver "^7.5.4"
-    simple-get "^4.0.1"
-    tar-fs "^3.0.4"
-    tunnel-agent "^0.6.0"
-
-sharp@^0.32.5:
+sharp@0.32.6, sharp@^0.32.5:
   version "0.32.6"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
   integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
@@ -3687,10 +3668,10 @@ tar-stream@^3.1.5:
     fast-fifo "^1.2.0"
     streamx "^2.15.0"
 
-terser@5.19.3:
-  version "5.19.3"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.19.3.tgz#359baeba615aef13db4b8c4d77a2aa0d8814aa9e"
-  integrity sha512-pQzJ9UJzM0IgmT4FAtYI6+VqFf0lj/to58AV0Xfgg0Up37RyPG7Al+1cepC6/BVuAxR9oNb41/DL4DEoHJvTdg==
+terser@5.22.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.22.0.tgz#4f18103f84c5c9437aafb7a14918273310a8a49d"
+  integrity sha512-hHZVLgRA2z4NWcN6aS5rQDc+7Dcy58HOf2zbYwmFcQ+ua3h6eEFf5lIDKTzbWwlazPyOZsFQO8V80/IjVNExEw==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"

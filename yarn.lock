@@ -679,12 +679,19 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/node@*", "@types/node@20.8.7":
+"@types/node@*":
   version "20.8.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.7.tgz#ad23827850843de973096edfc5abc9e922492a25"
   integrity sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==
   dependencies:
     undici-types "~5.25.1"
+
+"@types/node@20.8.9":
+  version "20.8.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.9.tgz#646390b4fab269abce59c308fc286dcd818a2b08"
+  integrity sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/node@^17.0.5":
   version "17.0.45"
@@ -805,19 +812,19 @@ array-union@^2.1.0:
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
 astro-compress@^2.1.0:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.1.5.tgz#54979b4c8f2f008a4413e27a1cfe4589e89e247a"
-  integrity sha512-aoqGm2zbv8LMTl8tktiyV/BfTs4GrKb7SFYQ6Fuv7BqpYkn33yrxs0Qz+CFpXL72YUGmQuWw3vuUi5IA3S4BzA==
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.1.6.tgz#6c873d6733a1c4522bc774d607dbf43a84ade10a"
+  integrity sha512-tr9JrAA3Un4PAkR5lSZk7P+SU2d1uA5o/2nQ/9FCQ+fSBzuIsLyqr+Ea8IEvxHPKKelQI2LyXUCt+s4qFzJ0HA==
   dependencies:
     "@types/csso" "5.0.2"
     "@types/html-minifier-terser" "7.0.1"
     csso "5.0.5"
-    files-pipe "2.1.1"
+    files-pipe "2.1.2"
     html-minifier-terser "7.2.0"
     sharp "0.32.6"
     svgo "3.0.2"
     terser "5.22.0"
-    typescript-esbuild "0.2.25"
+    typescript-esbuild "0.3.1"
 
 astro-robots-txt@^1.0.0:
   version "1.0.0"
@@ -1617,12 +1624,12 @@ filename-reserved-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/filename-reserved-regex/-/filename-reserved-regex-3.0.0.tgz#3d5dd6d4e2d73a3fed2ebc4cd0b3448869a081f7"
   integrity sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==
 
-files-pipe@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/files-pipe/-/files-pipe-2.1.1.tgz#0bc5033d7dbf7574d55fe55fa840d4f9c1506f81"
-  integrity sha512-grvkOxmaPpu7EHI4BeFpVAuZiNfbaftmKhy8ly5/miUCNYkIfrqiQB+ZG9jGrdlefYqM3MiFfE9GUw7g7sGd/A==
+files-pipe@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/files-pipe/-/files-pipe-2.1.2.tgz#7aeef3403e40171929be7bdf0a90aa95c147d1d7"
+  integrity sha512-QWmVUJ4swy7Jan9x3VPUVjoGdUw+YZRY4j5AaqArOdRF5lX8vgIPdD+OzUqWzJ/pvjHY2zU43b5s2lb1hiSNlA==
   dependencies:
-    "@types/node" "20.8.7"
+    "@types/node" "20.8.9"
     deepmerge-ts "5.1.0"
     fast-glob "3.3.1"
 
@@ -3929,12 +3936,12 @@ typedoc@0.25.2:
     minimatch "^9.0.3"
     shiki "^0.14.1"
 
-typescript-esbuild@0.2.25:
-  version "0.2.25"
-  resolved "https://registry.yarnpkg.com/typescript-esbuild/-/typescript-esbuild-0.2.25.tgz#3750fb9a566e5531996c122600c9bcc28e437aaa"
-  integrity sha512-sOpKewLkTFG7ebqSTZNsHdnvoZ7X8jy7F1NjBYAdwiVfKFOR7fLuweYd17hRUTqcAf2wp28BJNqJ6c3WLgrMfw==
+typescript-esbuild@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/typescript-esbuild/-/typescript-esbuild-0.3.1.tgz#eef352a78c500eff99af31d18d233281e94186db"
+  integrity sha512-ZJwbrzS8Jv2OTAPbFEvD85CbjRLVYbjUV51JPn3THe/bbh2pY+P9UVVZ8QUvHag8kpqEwgrdhVhYgrdgUkC/lw==
   dependencies:
-    "@types/node" "20.8.7"
+    "@types/node" "20.8.9"
     commander "11.1.0"
     deepmerge-ts "5.1.0"
     esbuild "0.19.5"
@@ -3947,14 +3954,9 @@ typescript-esbuild@0.2.25:
     typedoc-plugin-remove-references "0.0.6"
     typedoc-plugin-rename-defaults "0.6.7"
     typedoc-plugin-zod "1.1.0"
-    typescript "5.3.0-dev.20231021"
+    typescript "5.2.2"
 
-typescript@5.3.0-dev.20231021:
-  version "5.3.0-dev.20231021"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20231021.tgz#27640433afa0408c78dfa2500da071f9b503b54c"
-  integrity sha512-Q9le8GTluHWR1d6lo8anl5+ImJrZ9KApSpM4yEkDIMVcKueCC6q+Wz/kDL6FXPcO8odWHhDQD4vImed7KDp9Fw==
-
-typescript@^5.2.2:
+typescript@5.2.2, typescript@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.2.tgz#5ebb5e5a5b75f085f22bc3f8460fba308310fa78"
   integrity sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==
@@ -3963,6 +3965,11 @@ undici-types@~5.25.1:
   version "5.25.3"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.25.3.tgz#e044115914c85f0bcbb229f346ab739f064998c3"
   integrity sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 unherit@^3.0.0:
   version "3.0.1"

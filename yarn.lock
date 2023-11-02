@@ -812,9 +812,9 @@ array-union@^2.1.0:
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
 astro-compress@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.2.0.tgz#90bd66851a602f87a7e36ce26eeb761fe6b54e7e"
-  integrity sha512-vyWyjQY5hoIym5GdjFiV6bBNfjGHCWmn9eGMpgZ3QCmspIUyDa83WDJN1Gb4jTIRimnrDtDrSrMYBLKPVDrmWQ==
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.2.2.tgz#fb9182f66875cb18fc14e2343354e03014f731c8"
+  integrity sha512-XEGHH6mJZHii0MCcQorCETrdme0tJTv5sU+PiLIUpekjv5GU3STHZ9pk09actvco6nlK9iWONTOuWg3vPmlJ6w==
   dependencies:
     "@types/csso" "5.0.2"
     "@types/html-minifier-terser" "7.0.1"
@@ -824,7 +824,7 @@ astro-compress@^2.1.0:
     lightningcss "1.22.0"
     sharp "0.32.6"
     svgo "3.0.2"
-    terser "5.22.0"
+    terser "5.24.0"
     typescript-esbuild "0.3.1"
 
 astro-robots-txt@^1.0.0:
@@ -3914,10 +3914,10 @@ tar-stream@^3.1.5:
     fast-fifo "^1.2.0"
     streamx "^2.15.0"
 
-terser@5.22.0, terser@^5.15.1:
-  version "5.22.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.22.0.tgz#4f18103f84c5c9437aafb7a14918273310a8a49d"
-  integrity sha512-hHZVLgRA2z4NWcN6aS5rQDc+7Dcy58HOf2zbYwmFcQ+ua3h6eEFf5lIDKTzbWwlazPyOZsFQO8V80/IjVNExEw==
+terser@5.24.0, terser@^5.15.1:
+  version "5.24.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.24.0.tgz#4ae50302977bca4831ccc7b4fef63a3c04228364"
+  integrity sha512-ZpGR4Hy3+wBEzVEnHvstMvqpD/nABNelQn/z2r0fjVWGQsN3bpOLzQlqDxmb4CDZnXq5lpjnQ+mHQLAOpfM5iw==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
@@ -4174,9 +4174,9 @@ unist-util-visit@^5.0.0:
     unist-util-visit-parents "^6.0.0"
 
 universalify@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
-  integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.1.tgz#168efc2180964e6386d061e094df61afe239b18d"
+  integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
 update-browserslist-db@^1.0.13:
   version "1.0.13"

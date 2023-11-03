@@ -812,9 +812,9 @@ array-union@^2.1.0:
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
 astro-compress@^2.1.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.2.2.tgz#fb9182f66875cb18fc14e2343354e03014f731c8"
-  integrity sha512-XEGHH6mJZHii0MCcQorCETrdme0tJTv5sU+PiLIUpekjv5GU3STHZ9pk09actvco6nlK9iWONTOuWg3vPmlJ6w==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-2.2.3.tgz#f05383f34c52bf792cacd7c48041c977d5e20a54"
+  integrity sha512-aU4yiTOsnrFdMQnfzxL3bxTCaa/4vIvGXR8e+Ngxr6jpZvzV1pOy7hIthzmt4vjHe6m4VfRSZwtc3/x16/fJcQ==
   dependencies:
     "@types/csso" "5.0.2"
     "@types/html-minifier-terser" "7.0.1"

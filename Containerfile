@@ -11,7 +11,7 @@ COPY ./ ./
 RUN yarn build
 
 
-FROM quay.io/sclorg/nginx-122-micro-c9s@sha256:0e439a1adf335ad087deb7583fc227cb991e4f4dfeb86d2bac03eddcd8d8eeb8 AS release
+FROM quay.io/sclorg/nginx-122-micro-c9s@sha256:335517dc49202b4c92173fa3f040979f49b07212603715323d1bcc13f56f2843 AS release
 
 COPY --from=build --chown=nginx /app/dist /tmp/src
 

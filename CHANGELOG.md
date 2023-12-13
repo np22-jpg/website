@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.0](https://github.com/np22-jpg/website/compare/v1.0.0...v1.1.0) (2023-12-13)
+
+
+### Features
+
+* docker to sclorg ([6303270](https://github.com/np22-jpg/website/commit/63032703fb94b040862b2a4a403894d013c1e145))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @astrojs/tailwind to v5.0.3 ([c6d0b80](https://github.com/np22-jpg/website/commit/c6d0b80f1d655604ddcce8d9dd8053401de4fc92))
+* **deps:** update dependency astro to v4 ([acf9263](https://github.com/np22-jpg/website/commit/acf9263e25d420f63b7288b744e169c61fe1d7e1))
+* **deps:** update dependency astro-compress to v2.2.4 ([5ecc500](https://github.com/np22-jpg/website/commit/5ecc500ddba57f7b02782506b678770eb599c41c))
+* **deps:** update dependency astro-compress to v2.2.5 ([d5ac34f](https://github.com/np22-jpg/website/commit/d5ac34f19f564ebecc7c504d4192293a7557a93b))
+* **deps:** update dependency tailwindcss to v3.3.6 ([ceb4047](https://github.com/np22-jpg/website/commit/ceb40473142e280df428c088a7d9b2cd2660cf62))
+
 ## 1.0.0 (2023-12-03)
 
 

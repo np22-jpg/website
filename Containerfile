@@ -1,15 +1,22 @@
-FROM docker.io/library/node:21.4-bookworm@sha256:db2672e3c200b85e0b813cdb294fac16764711d7a66b41315e6261f2231f2331 AS builder
+FROM  quay.io/sclorg/nodejs-20-c9s@sha256:f2be8611e0fb224728456bfe703bb631de8e1b8dc7200f5a8a9996a9eb3ed11e AS build
+
+USER root
+RUN npm install -g yarn
 
 WORKDIR /app
-COPY yarn.lock package.json ./
+COPY package.json yarn.lock ./
 RUN yarn install
+
 COPY ./ ./
 RUN yarn build
 
 
-FROM docker.io/library/nginx:1.25.3-alpine@sha256:3923f8de8d2214b9490e68fd6ae63ea604deddd166df2755b788bef04848b9bc AS release
+FROM quay.io/sclorg/nginx-122-micro-c9s@sha256:0e439a1adf335ad087deb7583fc227cb991e4f4dfeb86d2bac03eddcd8d8eeb8 AS release
 
-COPY --from=builder /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build --chown=nginx /app/dist /tmp/src
 
-EXPOSE 80
+# Let the assemble script to install the dependencies
+RUN /usr/libexec/s2i/assemble
+
+# Run script uses standard ways to run the application
+CMD /usr/libexec/s2i/run

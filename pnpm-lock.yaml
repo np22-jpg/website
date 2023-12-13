@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@astrojs/sitemap':
-    specifier: ^3.0.0
+    specifier: ^3.0.3
     version: 3.0.3
   '@astrojs/tailwind':
-    specifier: ^5.0.0
+    specifier: ^5.0.3
     version: 5.0.3(astro@4.0.4)(tailwindcss@3.3.6)
   astro:
-    specifier: ^4.0.0
+    specifier: ^4.0.4
     version: 4.0.4(typescript@5.3.3)
   astro-compress:
-    specifier: ^2.1.0
+    specifier: ^2.2.5
     version: 2.2.5
   astro-robots-txt:
     specifier: ^1.0.0
@@ -27,7 +27,7 @@ dependencies:
     specifier: ^0.33.0
     version: 0.33.0
   tailwindcss:
-    specifier: ^3.0.24
+    specifier: ^3.3.6
     version: 3.3.6
 
 packages:

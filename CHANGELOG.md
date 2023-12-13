@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/np22-jpg/website/compare/v1.1.0...v1.1.1) (2023-12-13)
+
+
+### Bug Fixes
+
+* Run CI on PRs ([e2d5de8](https://github.com/np22-jpg/website/commit/e2d5de899a4f1cfa54f0d776ded04674d4db02ad))
+* swap to pnpm ([238fa2a](https://github.com/np22-jpg/website/commit/238fa2a4bd61d224624cef207639289e5ccd35fe))
+
 ## [1.1.0](https://github.com/np22-jpg/website/compare/v1.0.0...v1.1.0) (2023-12-13)
 
 

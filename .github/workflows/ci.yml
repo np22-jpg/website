@@ -1,4 +1,4 @@
-name: Build and Push to Docker Hub
+name: Build and Push to GHCR
 
 on:
   pull_request:
@@ -14,8 +14,7 @@ env:
 
 jobs:
   build_and_push_docker_images:
-    name: Push Docker image to Docker Hub
-
+    name: Push Docker image to GHCR
     permissions:
       packages: write
       contents: read

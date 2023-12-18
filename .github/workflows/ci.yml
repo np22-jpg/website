@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: "0 1 * * *" # Run once every day
 
+env:
+  REPO: website
+  PLATFORMS: linux/amd64
+
 jobs:
   build_and_push_docker_images:
     name: Push Docker image to GHCR
@@ -26,7 +30,7 @@ jobs:
         uses: redhat-actions/buildah-build@b4dc19b4ba891854660ab1f88a097d45aa158f76 # v2
         with:
           image: website
-          tags: latest
+          tags: latest ${{ github.sha }}
           containerfiles: |
             ./Containerfile
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/np22-jpg/website/compare/v1.1.0...v1.1.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* Do not push images on PR ([2695d9d](https://github.com/np22-jpg/website/commit/2695d9d5c19dcd34cb4adf24efb1b83e75326de2))
+* do not use env.REPO to idenfity image tag ([1c3e966](https://github.com/np22-jpg/website/commit/1c3e966035ef02058fa1cf3992671c07cbe40be0))
+* Run CI on PRs ([e2d5de8](https://github.com/np22-jpg/website/commit/e2d5de899a4f1cfa54f0d776ded04674d4db02ad))
+* swap to pnpm ([238fa2a](https://github.com/np22-jpg/website/commit/238fa2a4bd61d224624cef207639289e5ccd35fe))
+
 ## [1.1.0](https://github.com/np22-jpg/website/compare/v1.0.0...v1.1.0) (2023-12-13)
 
 

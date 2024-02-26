@@ -10,10 +10,10 @@ dependencies:
     version: 3.1.1
   '@astrojs/tailwind':
     specifier: ^5.0.3
-    version: 5.1.0(astro@4.4.4)(tailwindcss@3.4.1)
+    version: 5.1.0(astro@4.4.5)(tailwindcss@3.4.1)
   astro:
     specifier: ^4.0.4
-    version: 4.4.4(typescript@5.3.3)
+    version: 4.4.5(typescript@5.3.3)
   astro-compress:
     specifier: ^2.2.5
     version: 2.2.10
@@ -137,13 +137,13 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.4.4)(tailwindcss@3.4.1):
+  /@astrojs/tailwind@5.1.0(astro@4.4.5)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.4.4(typescript@5.3.3)
+      astro: 4.4.5(typescript@5.3.3)
       autoprefixer: 10.4.17(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
@@ -1297,8 +1297,8 @@ packages:
       - typescript
     dev: false
 
-  /astro@4.4.4(typescript@5.3.3):
-    resolution: {integrity: sha512-EZrDTN888w4sFKqavGsHu8jSaymyxNwnoqIq5NKlMG9WNU/Xn4Yn41pUdBuAOrgNzRp1NyXXhhV6GV1pN71V2Q==}
+  /astro@4.4.5(typescript@5.3.3):
+    resolution: {integrity: sha512-ccat42P5qr281JExywVsK/BLeKgwSL+oLxJP195s4Wvj3nL32djw+WNJNctuDDTJ5XWgvPdHZjBtSDNO5OgagQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:

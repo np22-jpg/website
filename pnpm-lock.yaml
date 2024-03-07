@@ -10,10 +10,10 @@ dependencies:
     version: 3.1.1
   '@astrojs/tailwind':
     specifier: ^5.0.3
-    version: 5.1.0(astro@4.4.13)(tailwindcss@3.4.1)
+    version: 5.1.0(astro@4.4.14)(tailwindcss@3.4.1)
   astro:
     specifier: ^4.0.4
-    version: 4.4.13(typescript@5.4.2)
+    version: 4.4.14(typescript@5.4.2)
   astro-compress:
     specifier: ^2.2.5
     version: 2.2.11
@@ -62,10 +62,6 @@ packages:
       - prettier-plugin-astro
     dev: false
 
-  /@astrojs/compiler@2.6.0:
-    resolution: {integrity: sha512-c74k8iGHL3DzkosSJ0tGcHIEBEiIfBhr7eadSaPyvWlVKaieDVzVs8OW1tnRSQyBsfMc8DZQ4RcN2KAcESD8UQ==}
-    dev: false
-
   /@astrojs/compiler@2.7.0:
     resolution: {integrity: sha512-XpC8MAaWjD1ff6/IfkRq/5k1EFj6zhCNqXRd5J43SVJEBj/Bsmizkm8N0xOYscGcDFQkRgEw6/eKnI5x/1l6aA==}
     dev: false
@@ -86,7 +82,7 @@ packages:
       prettier-plugin-astro:
         optional: true
     dependencies:
-      '@astrojs/compiler': 2.6.0
+      '@astrojs/compiler': 2.7.0
       '@jridgewell/sourcemap-codec': 1.4.15
       '@volar/kit': 2.0.4(typescript@5.4.2)
       '@volar/language-core': 2.0.4
@@ -141,13 +137,13 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.4.13)(tailwindcss@3.4.1):
+  /@astrojs/tailwind@5.1.0(astro@4.4.14)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.4.13(typescript@5.4.2)
+      astro: 4.4.14(typescript@5.4.2)
       autoprefixer: 10.4.18(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
@@ -1301,8 +1297,8 @@ packages:
       - typescript
     dev: false
 
-  /astro@4.4.13(typescript@5.4.2):
-    resolution: {integrity: sha512-kx2k2DJd9Os15zJBo8fK01/2F7/4wH6sAKmlBHlkGHIFm6CKSSzWCK/IWQ0DybNWtthK9A3HDZ4VYWv0BJDOBg==}
+  /astro@4.4.14(typescript@5.4.2):
+    resolution: {integrity: sha512-b8l8NyUP38sWDkCSx9PKTX8aISIXhEGCnsx5FugOTyMisYeeY2hwyaiUpL11WvNJafq28RY0RMO+HWBR6te6fA==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -1339,7 +1335,7 @@ packages:
       estree-walker: 3.0.3
       execa: 8.0.1
       fast-glob: 3.3.2
-      flattie: 1.1.0
+      flattie: 1.1.1
       github-slugger: 2.0.0
       gray-matter: 4.0.3
       html-escaper: 3.0.3
@@ -2118,8 +2114,8 @@ packages:
       pkg-dir: 4.2.0
     dev: false
 
-  /flattie@1.1.0:
-    resolution: {integrity: sha512-xU99gDEnciIwJdGcBmNHnzTJ/w5AT+VFJOu6sTB6WM8diOYNA3Sa+K1DiEBQ7XH4QikQq3iFW1U+jRVcotQnBw==}
+  /flattie@1.1.1:
+    resolution: {integrity: sha512-9UbaD6XdAL97+k/n+N7JwX46K/M6Zc6KcFYskrYL8wbBV/Uyk0CTAMY0VT+qiK5PM7AIc9aTWYtq65U7T+aCNQ==}
     engines: {node: '>=8'}
     dev: false
 

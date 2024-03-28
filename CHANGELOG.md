@@ -1,5 +1,50 @@
 # Changelog
 
+## [1.1.1](https://github.com/np22-jpg/website/compare/v1.1.0...v1.1.1) (2024-03-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @astrojs/sitemap to v3.1.1 ([df003bb](https://github.com/np22-jpg/website/commit/df003bb2c9bac9eacdb0f874b1188155983346ed))
+* **deps:** update dependency @astrojs/sitemap to v3.1.2 ([24ccdfb](https://github.com/np22-jpg/website/commit/24ccdfb53183674c35fbcd7d4d27d3a986775c69))
+* **deps:** update dependency astro to v4.4.10 ([a386c07](https://github.com/np22-jpg/website/commit/a386c07aaf664712d2061973edeffe0ad27014dd))
+* **deps:** update dependency astro to v4.4.11 ([e8d57f5](https://github.com/np22-jpg/website/commit/e8d57f566ae17562c11ef26cd61d39afd3ec57be))
+* **deps:** update dependency astro to v4.4.12 ([6aa97f7](https://github.com/np22-jpg/website/commit/6aa97f7f869ef853819118e56415a67886443463))
+* **deps:** update dependency astro to v4.4.13 ([3252bd9](https://github.com/np22-jpg/website/commit/3252bd92e1d174d5e1c0df513b4bade823c531fa))
+* **deps:** update dependency astro to v4.4.14 ([29ac918](https://github.com/np22-jpg/website/commit/29ac918e09bb1c12ab2f62d38d09f652ccd8bcf5))
+* **deps:** update dependency astro to v4.4.15 ([afb581b](https://github.com/np22-jpg/website/commit/afb581bd34517c7e0a5b7996b95daf8c5a083718))
+* **deps:** update dependency astro to v4.4.4 ([9fa32de](https://github.com/np22-jpg/website/commit/9fa32def43c1b3ba0c591ef81459aca9dcb4d859))
+* **deps:** update dependency astro to v4.4.5 ([d6e1605](https://github.com/np22-jpg/website/commit/d6e1605f4898dd708415854f47ddc155190b9c2d))
+* **deps:** update dependency astro to v4.4.6 ([890693e](https://github.com/np22-jpg/website/commit/890693e27b013648305549e3a6beda4ec761282d))
+* **deps:** update dependency astro to v4.4.8 ([51e9103](https://github.com/np22-jpg/website/commit/51e9103945768afef6d628033d53800121f2b901))
+* **deps:** update dependency astro to v4.4.9 ([d32bc0b](https://github.com/np22-jpg/website/commit/d32bc0bb9e7b4e8ded47a2a72e798f607f5ae8d9))
+* **deps:** update dependency astro to v4.5.0 ([1fad54e](https://github.com/np22-jpg/website/commit/1fad54e67d222cc74e5535f69f9801e7feb5ce59))
+* **deps:** update dependency astro to v4.5.1 ([b4050cf](https://github.com/np22-jpg/website/commit/b4050cf7557483377d2bf712d47170d66e8b6fdb))
+* **deps:** update dependency astro to v4.5.10 ([f117e24](https://github.com/np22-jpg/website/commit/f117e24766c701dc7a5ff03e18890578d4613b80))
+* **deps:** update dependency astro to v4.5.2 ([7b702a8](https://github.com/np22-jpg/website/commit/7b702a8ae2a51c52c87059b503ac005f52233c03))
+* **deps:** update dependency astro to v4.5.3 ([c025278](https://github.com/np22-jpg/website/commit/c025278e8a6113b3145e27c557419be94eaf1bc3))
+* **deps:** update dependency astro to v4.5.4 ([1a2bd90](https://github.com/np22-jpg/website/commit/1a2bd90915001dbbd8f0769a4dbaecc64d8c1db2))
+* **deps:** update dependency astro to v4.5.5 ([e2ea258](https://github.com/np22-jpg/website/commit/e2ea2582d77140b36561e2f139d45759c330a733))
+* **deps:** update dependency astro to v4.5.6 ([2196257](https://github.com/np22-jpg/website/commit/2196257d1d58ffcd45e46c212c46bad82e2f9e03))
+* **deps:** update dependency astro to v4.5.8 ([e737fb1](https://github.com/np22-jpg/website/commit/e737fb18d061e7ae157ec25799d3e166a6ccd89e))
+* **deps:** update dependency astro to v4.5.9 ([3e5b604](https://github.com/np22-jpg/website/commit/3e5b60461ea22091e9efdc78e1d0c21c1540d4ad))
+* **deps:** update dependency astro-compress to v2.2.11 ([e095fb3](https://github.com/np22-jpg/website/commit/e095fb3cdfba7578e285bf41ea582555d91002ff))
+* **deps:** update dependency astro-compress to v2.2.13 ([3dec938](https://github.com/np22-jpg/website/commit/3dec938b6047a60b74d70522e6874447a58c48c4))
+* **deps:** update dependency astro-compress to v2.2.14 ([49ef8e9](https://github.com/np22-jpg/website/commit/49ef8e96e14ca581fd9f0bbbd41971a98e453ba7))
+* **deps:** update dependency astro-compress to v2.2.15 ([bc61a87](https://github.com/np22-jpg/website/commit/bc61a87fecc9b75b772149317fdc64fbd8b60616))
+* **deps:** update dependency astro-compress to v2.2.16 ([1ea969a](https://github.com/np22-jpg/website/commit/1ea969a4ff26cf4d4dc008e1181e1c52b514d8e3))
+* **deps:** update dependency astro-compress to v2.2.17 ([eb4697c](https://github.com/np22-jpg/website/commit/eb4697cace19c43f50c37c099ff82c6a708df0b5))
+* **deps:** update dependency astro-compress to v2.2.19 ([590d264](https://github.com/np22-jpg/website/commit/590d264f4f5a71e47d290bc851558bb8d0cad25e))
+* **deps:** update dependency astro-compress to v2.2.20 ([a696f92](https://github.com/np22-jpg/website/commit/a696f9243f290029616d823238d304515cc467e7))
+* **deps:** update dependency astro-seo to v0.8.2 ([34dbe32](https://github.com/np22-jpg/website/commit/34dbe32536c88cf10ba1a7b29160cdaa018eb2b9))
+* **deps:** update dependency astro-seo to v0.8.3 ([1948016](https://github.com/np22-jpg/website/commit/1948016571c5d4228f4a8290a1354570621e471e))
+* **deps:** update dependency sharp to v0.33.3 ([cb3428c](https://github.com/np22-jpg/website/commit/cb3428c6864ffd8a6906e878d8d9e213e8b089fc))
+* **deps:** update dependency tailwindcss to v3.4.2 ([8f8bb8e](https://github.com/np22-jpg/website/commit/8f8bb8e00a59594db8e4f843e48ad5367b087e21))
+* Do not push images on PR ([2695d9d](https://github.com/np22-jpg/website/commit/2695d9d5c19dcd34cb4adf24efb1b83e75326de2))
+* do not use env.REPO to idenfity image tag ([1c3e966](https://github.com/np22-jpg/website/commit/1c3e966035ef02058fa1cf3992671c07cbe40be0))
+* Run CI on PRs ([e2d5de8](https://github.com/np22-jpg/website/commit/e2d5de899a4f1cfa54f0d776ded04674d4db02ad))
+* swap to pnpm ([238fa2a](https://github.com/np22-jpg/website/commit/238fa2a4bd61d224624cef207639289e5ccd35fe))
+
 ## [1.1.0](https://github.com/np22-jpg/website/compare/v1.0.0...v1.1.0) (2023-12-13)
 
 

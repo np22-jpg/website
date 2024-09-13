@@ -13,10 +13,10 @@ importers:
         version: 3.1.6
       '@astrojs/tailwind':
         specifier: ^5.0.3
-        version: 5.1.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.11)
+        version: 5.1.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.11)
       astro:
         specifier: ^4.0.4
-        version: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
+        version: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
       astro-compress:
         specifier: ^2.2.5
         version: 2.3.1(@types/node@20.14.12)(rollup@4.21.3)(typescript@5.5.4)
@@ -858,8 +858,8 @@ packages:
   astro-seo@0.8.4:
     resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
 
-  astro@4.15.5:
-    resolution: {integrity: sha512-zcHXpRav0dtYpddxoGMDN7A7SKrGL9wsu5IxLjqCcZhylfZ/5mfLfoGYnSg7aFwuAleUXP66lyfY+GDbFTbF2w==}
+  astro@4.15.6:
+    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1812,6 +1812,9 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
+  path-to-regexp@6.2.2:
+    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
+
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
 
@@ -2540,9 +2543,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.11)':
+  '@astrojs/tailwind@5.1.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.11)':
     dependencies:
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.45)
       postcss: 8.4.45
       postcss-load-config: 4.0.2(postcss@8.4.45)
@@ -3249,7 +3252,7 @@ snapshots:
       '@playform/pipe': 0.1.0
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4)
       csso: 5.0.5
       deepmerge-ts: 7.1.0
       html-minifier-terser: 7.2.0
@@ -3282,7 +3285,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4):
+  astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(terser@5.31.3)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3330,6 +3333,7 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
+      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -4476,6 +4480,8 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
+
+  path-to-regexp@6.2.2: {}
 
   picocolors@1.1.0: {}
 

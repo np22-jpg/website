@@ -11,7 +11,7 @@ COPY ./ ./
 RUN pnpm build
 
 
-FROM quay.io/sclorg/nginx-122-micro-c9s@sha256:973626e91f6270421cb9872ffc820e9e3e1d6961219dbee174258e590666625d AS release
+FROM quay.io/sclorg/nginx-122-micro-c9s@sha256:ad0dddda4345a4302d844127fbb924424037e4f1126257a02711ecf03ee17eda AS release
 
 COPY --from=build --chown=nginx /app/dist /tmp/src
 

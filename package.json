@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.3",
-    "astro": "^4.0.4",
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.0.0",
     "astro-compress": "^2.2.5",
     "astro-robots-txt": "^1.0.0",
     "astro-seo": "^0.8.0",

@@ -9,28 +9,28 @@ importers:
   .:
     dependencies:
       '@astrojs/sitemap':
-        specifier: ^3.0.3
+        specifier: ^3.4.0
         version: 3.4.0
       '@astrojs/tailwind':
-        specifier: ^6.0.0
+        specifier: ^6.0.2
         version: 6.0.2(astro@5.8.1(@types/node@22.15.29)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       astro:
-        specifier: ^5.0.0
+        specifier: ^5.8.1
         version: 5.8.1(@types/node@22.15.29)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-compress:
-        specifier: ^2.2.5
+        specifier: ^2.3.8
         version: 2.3.8(@types/node@22.15.29)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       astro-robots-txt:
         specifier: ^1.0.0
         version: 1.0.0
       astro-seo:
-        specifier: ^0.8.0
+        specifier: ^0.8.4
         version: 0.8.4(typescript@5.8.3)
       sharp:
-        specifier: ^0.34.0
+        specifier: ^0.34.2
         version: 0.34.2
       tailwindcss:
-        specifier: ^3.3.6
+        specifier: ^3.4.17
         version: 3.4.17
 
 packages:
@@ -2450,8 +2450,8 @@ packages:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
 
-  zod@3.25.46:
-    resolution: {integrity: sha512-IqRxcHEIjqLd4LNS/zKffB3Jzg3NwqJxQQ0Ns7pdrvgGkwQsEBdEQcOHaBVqvvZArShRzI39+aMST3FBGmTrLQ==}
+  zod@3.25.47:
+    resolution: {integrity: sha512-+f8+agSYoT9niC0VUL60IuXnr81FJeJ27Lf5YPrmcxTWmygcpGBeEuAAovDDEjkyQ36KyqNswwbhISZ1Z7yY+A==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -2533,7 +2533,7 @@ snapshots:
     dependencies:
       sitemap: 8.0.0
       stream-replace-string: 2.0.0
-      zod: 3.25.46
+      zod: 3.25.47
 
   '@astrojs/tailwind@6.0.2(astro@5.8.1(@types/node@22.15.29)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
@@ -3192,7 +3192,7 @@ snapshots:
   astro-robots-txt@1.0.0:
     dependencies:
       valid-filename: 4.0.0
-      zod: 3.25.46
+      zod: 3.25.47
 
   astro-seo@0.8.4(typescript@5.8.3):
     dependencies:
@@ -3262,9 +3262,9 @@ snapshots:
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
-      zod: 3.25.46
-      zod-to-json-schema: 3.24.5(zod@3.25.46)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.46)
+      zod: 3.25.47
+      zod-to-json-schema: 3.24.5(zod@3.25.47)
+      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.47)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -5181,15 +5181,15 @@ snapshots:
 
   yoctocolors@2.1.1: {}
 
-  zod-to-json-schema@3.24.5(zod@3.25.46):
+  zod-to-json-schema@3.24.5(zod@3.25.47):
     dependencies:
-      zod: 3.25.46
+      zod: 3.25.47
 
-  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.46):
+  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.47):
     dependencies:
       typescript: 5.8.3
-      zod: 3.25.46
+      zod: 3.25.47
 
-  zod@3.25.46: {}
+  zod@3.25.47: {}
 
   zwitch@2.0.4: {}

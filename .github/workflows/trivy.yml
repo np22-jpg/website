@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run Trivy vulnerability scanner
-      uses: aquasecurity/trivy-action@cf5c088a69634cd13ccddc735d7926162c31f9a6 # master
+      uses: aquasecurity/trivy-action@df678dbccf677bc6937338d569ba0da18964a8cc # master
       with:
         image-ref: 'ghcr.io/${{ github.repository_owner }}/website:latest'
         format: 'sarif'

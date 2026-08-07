@@ -38,7 +38,7 @@ jobs:
       - name: Push To GHCR
         if: github.event_name != 'pull_request'
         id: push-to-ghcr
-        uses: redhat-actions/push-to-registry@5860fc963bf8f2b3221773a023141612f010c469 # v2
+        uses: redhat-actions/push-to-registry@94ade333c38ecc0e60e94785125d9a52ca423b37 # v3
         with:
           username: ${{ github.actor }}
           password: ${{ github.token }}

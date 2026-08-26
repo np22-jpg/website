@@ -1,4 +1,4 @@
-FROM  quay.io/sclorg/nodejs-20-c9s@sha256:3fb57e72abccc6c3097c894bb5e1845c232626cc589ba2acdb7736d4e7ba2448 AS build
+FROM  quay.io/sclorg/nodejs-20-c9s@sha256:d47b375cd48b6febe6afe43d32f63e01f61ee9f327896de4dff4936d0ef9876a AS build
 
 USER root
 RUN npm install -g pnpm
